@@ -23,7 +23,11 @@ function replaceAds() {
       'width': 970, 
       'height': 90,
       'images': [
-        'http://i.kinja-img.com/gawker-media/image/upload/t_k-bigpic/195no95aw7ue7png.png'
+        'http://i.imgur.com/LDEy8k0.png',
+        'http://i.imgur.com/nFdji0P.png',
+        'http://i.imgur.com/yntRx43.png',
+        'http://i.imgur.com/dUHohTR.png',
+        'http://i.imgur.com/hKetzyR.png'
       ]
     },
     {
@@ -80,6 +84,4 @@ function replaceAds() {
   });
 }
 
-replaceAds();
-
-setTimeout(function() { replaceAds(); }, 1000);
+setTimeout(function() { replaceAds(); }, 2000);

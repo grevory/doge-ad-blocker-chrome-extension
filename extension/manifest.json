@@ -1,12 +1,17 @@
 {
   "name": "Doge Ad Blocker",
-  "description": "Show a doge instead of an ad. Much useful.",
+  "description": "Show a doge ad instead of a normal ad. Much useful.",
   "author": "Gregory Pike",
   "version": "0.1.0",
   "manifest_version": 2,
   "permissions": [
     "activeTab"
   ],
+  "icons": {
+    "16": "icons/doge-ad-blocker-16.png",
+    "48": "icons/doge-ad-blocker-48.png",
+    "128": "icons/doge-ad-blocker-128.png"
+  },
   "content_scripts": [
     {
       "matches": ["http://*/*"],
