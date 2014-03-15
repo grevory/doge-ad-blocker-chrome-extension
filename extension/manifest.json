@@ -2,7 +2,7 @@
   "name": "Doge Ad Blocker",
   "description": "Show a doge ad instead of a normal ad. Much useful.",
   "author": "Gregory Pike",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "manifest_version": 2,
   "permissions": [
     "activeTab"
