@@ -3,7 +3,7 @@ function replaceAds() {
   if (!body || !body.length) return;
 
   body = body [0];
-  var allPossibleAds = body.querySelectorAll('iframe, img');
+  var allPossibleAds = body.querySelectorAll('iframe, img, embed');
 
   var adSizes = [
     {
