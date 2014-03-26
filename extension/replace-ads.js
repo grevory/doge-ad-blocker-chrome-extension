@@ -15,7 +15,12 @@ function replaceAds() {
         'http://i.imgur.com/nFdji0P.png',
         'http://i.imgur.com/yntRx43.png',
         'http://i.imgur.com/dUHohTR.png',
-        'http://i.imgur.com/hKetzyR.png'
+        'http://i.imgur.com/hKetzyR.png',
+        'http://i.imgur.com/a0IHoiF.png',
+        'http://i.imgur.com/Eru7znL.png',
+        'http://i.imgur.com/RvSnOtf.png',
+        'http://i.imgur.com/ptpsRTI.png',
+        'http://i.imgur.com/XGHy3q2.png'
       ]
     },
     {
@@ -27,7 +32,12 @@ function replaceAds() {
         'http://i.imgur.com/nFdji0P.png',
         'http://i.imgur.com/yntRx43.png',
         'http://i.imgur.com/dUHohTR.png',
-        'http://i.imgur.com/hKetzyR.png'
+        'http://i.imgur.com/hKetzyR.png',
+        'http://i.imgur.com/a0IHoiF.png',
+        'http://i.imgur.com/Eru7znL.png',
+        'http://i.imgur.com/RvSnOtf.png',
+        'http://i.imgur.com/ptpsRTI.png',
+        'http://i.imgur.com/XGHy3q2.png'
       ]
     },
     {
@@ -57,7 +67,22 @@ function replaceAds() {
         'http://i.imgur.com/2zAVpk9.gif',
         'http://i.imgur.com/AvqFjYf.gif',
         'http://i.imgur.com/ymemO8P.gif',
-        'http://i.imgur.com/DE7lcsR.gif'
+        'http://i.imgur.com/DE7lcsR.gif',
+        'http://i.imgur.com/I8Bdu6Y.png',
+        'http://i.imgur.com/KY6kMX0.png',
+        'http://i.imgur.com/GP5V9kH.png',
+        'http://i.imgur.com/fKGHygM.png',
+        'http://i.imgur.com/6AoqAwM.png',
+        'http://i.imgur.com/hetpdgh.png',
+        'http://i.imgur.com/ZSMbyF5.png',
+        'http://i.imgur.com/Enxbpb9.png',
+        'http://i.imgur.com/u8QQW2L.png',
+        'http://i.imgur.com/A7IQLK2.png',
+        'http://i.imgur.com/Z24r2dp.png',
+        'http://i.imgur.com/c7zrCQr.png',
+        'http://i.imgur.com/QVFplXd.png',
+        'http://i.imgur.com/OS9n8Qc.png',
+        'http://i.imgur.com/blYUEwJ.png'
       ]
     },
     {
@@ -70,7 +95,14 @@ function replaceAds() {
         'http://i.imgur.com/0SRPVAQ.png',
         'http://i.imgur.com/3G70mJI.png',
         'http://i.imgur.com/K3DTblP.png',
-        'http://i.imgur.com/bauysYa.png'
+        'http://i.imgur.com/bauysYa.png',
+        'http://i.imgur.com/bllFO7G.png',
+        'http://i.imgur.com/BYr7hpK.png',
+        'http://i.imgur.com/OURneDO.png',
+        'http://i.imgur.com/DdXOWBg.png',
+        'http://i.imgur.com/UAwb6D5.png',
+        'http://i.imgur.com/CNO47Jw.png',
+        'http://i.imgur.com/LtLDNxF.png'
       ]
     }
   ];
