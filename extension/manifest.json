@@ -2,7 +2,7 @@
   "name": "Doge Ad Blocker",
   "description": "Show a doge ad instead of a normal ad. Much useful. Very ad. Wow.",
   "author": "Gregory Pike",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "manifest_version": 2,
   "permissions": [
     "activeTab"
@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*"],
-      "js": ["replace-ads.js"]
+      "js": ["doge-ad-replacer.js"]
     }
   ]
 }
