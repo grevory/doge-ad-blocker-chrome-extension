@@ -56,7 +56,7 @@
     return images[Math.floor(Math.random() * images.length)];
   }
 
-  function replaceAds(adImage, adWidth, adHeight) {
+  function replaceAds(adImages, adWidth, adHeight) {
     var body, allPossibleAds, adWidth, adHeight;
 
     // Get the body - we will search it for tags
@@ -75,7 +75,7 @@
 
     Array.prototype.forEach.call(allPossibleAds, function(el, i) {
       if (el.offsetWidth == adWidth && el.offsetHeight == adHeight) {
-        el.outerHTML = '<div style="width:'+adWidth+'px; height:'+adHeight+'px; background: url('+adImage.link+'); no-repeat fixed; -webkit-background-size: cover; border: 1px solid #ddd"></div>';
+        el.outerHTML = '<div style="width:'+adWidth+'px; height:'+adHeight+'px; background: url('+getRandomAd(adImages).link+'); no-repeat fixed; -webkit-background-size: cover; border: 1px solid #ddd"></div>';
       }
     });
   }
@@ -89,7 +89,7 @@
 
     qwest.get(imgurApiUrl + adData.imgurAlbumId, data, options, setAuthorization)
       .success(function(response) {
-        replaceAds(getRandomAd(response.data.images), adData.width, adData.height);
+        replaceAds(response.data.images, adData.width, adData.height);
       });
   }
 
