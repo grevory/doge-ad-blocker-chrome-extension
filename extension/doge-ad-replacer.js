@@ -56,8 +56,8 @@
     return images[Math.floor(Math.random() * images.length)];
   }
 
-  function replaceAds(adImages, adWidth, adHeight) {
-    var body, allPossibleAds, adWidth, adHeight;
+  function matchAds(adWidth, adHeight, adImages) {
+    var body, allPossibleAds, adWidth, adHeight, matchedAd;
 
     // Get the body - we will search it for tags
     body = document.getElementsByTagName('body');
@@ -75,9 +75,14 @@
 
     Array.prototype.forEach.call(allPossibleAds, function(el, i) {
       if (el.offsetWidth == adWidth && el.offsetHeight == adHeight) {
-        el.outerHTML = '<div style="width:'+adWidth+'px; height:'+adHeight+'px; background: url('+getRandomAd(adImages).link+'); no-repeat fixed; -webkit-background-size: cover; border: 1px solid #ddd"></div>';
+        matchedAd = true;
+        if (adImages) {
+          el.outerHTML = '<div style="width:'+adWidth+'px; height:'+adHeight+'px; background: url('+getRandomAd(adImages).link+'); no-repeat fixed; -webkit-background-size: cover; border: 1px solid #ddd"></div>';
+        }
       }
     });
+
+    return !!matchedAd;
   }
 
   function requestImages(adData) {
@@ -89,13 +94,15 @@
 
     qwest.get(imgurApiUrl + adData.imgurAlbumId, data, options, setAuthorization)
       .success(function(response) {
-        replaceAds(response.data.images, adData.width, adData.height);
+        matchAds(adData.width, adData.height, response.data.images);
       });
   }
 
   setTimeout(function() {
     dogeAds.forEach(function(adData) {
-      requestImages(adData);
+      if (matchAds(adData.width, adData.height)) {
+        requestImages(adData);
+      }
     });
   }, delayBeforeReplacingAds);
 })();
