@@ -1,0 +1,70 @@
+.doge-ad-blocker-settings {
+  border: 1px solid red;
+  margin: 5px;
+  width: 300px;
+  height: 225px;
+  background-image: url('images/doge.jpg');
+  position: relative;
+}
+.doge-ad-blocker-settings:after {
+  padding: 10px;
+}
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+.message-block {
+  color: blue;
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+#message-block-0 {
+  top: 130px;
+  left: 16px;
+}
+#message-block-1 {
+  top: 75px;
+  right: 19px;
+  text-align: right;
+  color: red;
+}
+#message-block-2 {
+  top: 61px;
+  left: 32px;
+  color: yellow;
+}
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+.btn {
+  border-radius: 8px;
+  border-width: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  cursor: pointer;
+}
+.btn.btn-red {
+  background-color: red;
+}
+.btn.btn-green {
+  background-color: green;
+}

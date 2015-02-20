@@ -2,15 +2,21 @@
   "name": "Doge Ad Blocker",
   "description": "Show a doge ad instead of a normal ad. Much useful. Very ad. Wow.",
   "author": "Gregory Pike",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "manifest_version": 2,
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "icons": {
     "16": "icons/doge-ad-blocker-16.png",
     "48": "icons/doge-ad-blocker-48.png",
     "128": "icons/doge-ad-blocker-128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/doge-ad-blocker-19.png",
+    "default_title": "Doge Ad Blocker Settings",
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {

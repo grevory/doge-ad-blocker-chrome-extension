@@ -4,7 +4,7 @@
 (function(){
 
   // The HTML elements that will be matched for ad size
-  var tagsToReplace = 'iframe, img, embed'
+  var tagsToReplace = 'iframe, img, embed';
   // Give the ad 200ms to load before replacing them
   var delayBeforeReplacingAds = 2000;
   
@@ -57,7 +57,7 @@
   }
 
   function matchAds(adWidth, adHeight, adImages) {
-    var body, allPossibleAds, adWidth, adHeight, matchedAd;
+    var body, allPossibleAds, matchedAd;
 
     // Get the body - we will search it for tags
     body = document.getElementsByTagName('body');
@@ -98,11 +98,16 @@
       });
   }
 
-  setTimeout(function() {
-    dogeAds.forEach(function(adData) {
-      if (matchAds(adData.width, adData.height)) {
-        requestImages(adData);
-      }
-    });
-  }, delayBeforeReplacingAds);
+  // First check to make sure the user has not disabled the extension
+  chrome.storage.sync.get('disabled', function(value) {
+    if (!value.disabled) {
+      setTimeout(function() {
+        dogeAds.forEach(function(adData) {
+          if (matchAds(adData.width, adData.height)) {
+            requestImages(adData);
+          }
+        });
+      }, delayBeforeReplacingAds);
+    }
+  });
 })();
