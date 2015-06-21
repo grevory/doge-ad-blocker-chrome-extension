@@ -33,6 +33,12 @@
       'imgurAlbumId': 'XKatw'
     },
     {
+      'name': '250x250',
+      'width': 250,
+      'height': 250,
+      'imgurAlbumId': 'XKatw'
+    },
+    {
       'name': '160x600',
       'width': 160,
       'height': 600,
