@@ -58,6 +58,14 @@
     }
   ];
 
+  var knownAdIds = [
+    {
+      id: 'google_companion_ad_div',
+      width: 300,
+      height: 250
+    }
+  ];
+
   function getRandomAd(images) {
     return images[Math.floor(Math.random() * images.length)];
   }
@@ -73,6 +81,21 @@
 
     // Get all the tags that we want to match for this size
     allPossibleAds = body.querySelectorAll(tagsToReplace);
+    Array.prototype.forEach.call(knownAdIds, function(elData, i) {
+      var element = null;
+
+      if (elData.width !== adWidth || elData.height !== adHeight) {
+        return;
+      }
+
+      element = document.getElementById(elData.id);
+      if (element && adImages) {
+        element.outerHTML = '<div style="width:'+adWidth+'px; height:'+adHeight+'px; background: url('+getRandomAd(adImages).link+'); no-repeat fixed; -webkit-background-size: cover; border: 1px solid #ddd"></div>';
+      }
+      if (element) {
+        matchedAd = true;
+      }
+    });
 
     if (!adWidth)
       adWidth = adImage.width;
