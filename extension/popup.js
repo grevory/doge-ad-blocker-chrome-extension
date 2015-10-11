@@ -73,6 +73,7 @@ function fadeMessage(index, delay, callback) {
 function hideButton(elementId) {
   document.getElementById(elementId).style.display = 'none';
 }
+
 function showButton(elementId) {
   document.getElementById(elementId).style.display = 'inline-block';
 }
